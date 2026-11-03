@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Majutus Kuressaares | Hubane Pärna Puhkemaja</title>
+  <meta name="description" content="Otsid mugavat öömaja Saaremaal? Pärna Puhkemaja ja Külaliskorterid pakuvad kodust puhkust Kuressaare vaikses roheluses. Broneeri otse!">
+  <link rel="canonical" href="https://parna.ee">
+  
+  <!-- Open Graph / Meta sotsiaalmeediale -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Majutus Kuressaares | Hubane Pärna Puhkemaja">
+  <meta property="og:description" content="Otsid mugavat öömaja Saaremaal? Pärna Puhkemaja ja Külaliskorterid pakuvad kodust puhkust Kuressaare vaikses roheluses. Broneeri otse!">
+  <meta property="og:url" content="https://parna.ee">
+  <meta property="og:image" content="images/357365698_785273059708717_5382284297071717503_n.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Värvipalett */
+      --color-primary-dark: #1C2E3D;   /* Logo tumesinine, pealkirjad, põhitekst */
+      --color-primary-blue: #3B6B88;   /* Logo heledam sinine, nupud, lingid */
+      --color-accent-warm: #C57B4B;    /* Soe okker / aktsent */
+      
+      --color-bg-main: #FBF9F5;        /* Veebilehe soe liivakarva põhitaust */
+      --color-bg-card: #F2ECE1;        /* Kaartide ja plokkide taust */
+      --color-bg-white: #FFFFFF;       /* Vormiväljade taust */
+      
+      --color-text-main: #1C2E3D;      /* Põhitekst (kõrge kontrast) */
+      --color-text-muted: #546675;     /* Teisejärguline tekst ja selgitused */
+      --color-text-light: #FBF9F5;     /* Tekst tumedal taustal (jaluses) */
+      
+      --color-border: #D4C9BC;         /* Õrn piirjoon väljadele ja eraldajatele */
+      --color-border-focus: #1C2E3D;   /* Vormi fookuses piirjoon */
+
+      /* Tüpograafia */
+      --font-heading: 'Lora', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      /* Kirjasuurused */
+      --font-size-h1: clamp(1.875rem, 4vw, 2.5rem);  /* 30px - 40px */
+      --font-size-h2: clamp(1.5rem, 3vw, 1.75rem);   /* 24px - 28px */
+      --font-size-h3: 1.25rem;                        /* 20px */
+      --font-size-body: 1rem;                         /* 16px */
+      --font-size-small: 0.875rem;                    /* 14px */
+
+      /* Reavahed */
+      --line-height-heading: 1.25;
+      --line-height-body: 1.6;
+
+      /* Raadiused ja varjud */
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      
+      --shadow-card: 0 4px 20px rgba(28, 46, 61, 0.06);
+      --shadow-hover: 0 8px 30px rgba(28, 46, 61, 0.12);
+
+      /* Üleminekud */
+      --transition-fast: all 0.2s ease-in-out;
+    }
+
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg-main);
+      color: var(--color-text-main);
+      line-height: var(--line-height-body);
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 70px; /* Ruumi mobiilsele kleepuvale nupule */
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      line-height: var(--line-height-heading);
+      color: var(--color-primary-dark);
+      font-weight: 600;
+    }
+
+    h1 { font-size: var(--font-size-h1); }
+    h2 { font-size: var(--font-size-h2); }
+    h3 { font-size: var(--font-size-h3); }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--color-primary-blue);
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    a:hover, a:focus-visible {
+      color: var(--color-primary-dark);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: var(--radius-md);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .section-padding {
+      padding: 4rem 0;
+    }
+
+    @media (min-width: 992px) {
+      .section-padding {
+        padding: 6rem 0;
+      }
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title p {
+      color: var(--color-text-muted);
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* Nupud */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary-dark);
+      color: #FFFFFF;
+    }
+
+    .btn-primary:hover, .btn-primary:focus-visible {
+      background-color: var(--color-primary-blue);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border-color: var(--color-primary-dark);
+      color: var(--color-primary-dark);
+    }
+
+    .btn-secondary:hover, .btn-secondary:focus-visible {
+      background-color: var(--color-bg-card);
+      color: var(--color-primary-dark);
+    }
+
+    /* Päis ja Navigatsioon */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(251, 249, 245, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--color-border);
+      transition: var(--transition-fast);
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .logo-text {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      line-height: 1.2;
+    }
+
+    .logo-sub {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: var(--color-text-main);
+      padding: 0.5rem 0;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: var(--color-accent-warm);
+      transition: var(--transition-fast);
+    }
+
+    .nav-link:hover::after, .nav-link:focus-visible::after {
+      width: 100%;
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--color-primary-dark);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    @media (max-width: 991px) {
+      .mobile-toggle {
+        display: block;
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: var(--color-bg-main);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .header-cta {
+        display: none;
+      }
+    }
+
+    /* Hero / Avaplokk */
+    .hero {
+      padding: 3rem 0 4rem 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 4rem;
+      }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-accent-warm);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-intro {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    .hero-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .hero-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--color-text-main);
+    }
+
+    .hero-feature-item svg {
+      color: var(--color-accent-warm);
+      flex-shrink: 0;
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-experience-badge {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: var(--color-primary-dark);
+      color: #FFFFFF;
+      padding: 1.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-hover);
+      display: none;
+    }
+
+    @media (min-width: 576px) {
+      .hero-experience-badge {
+        display: block;
+      }
+    }
+
+    .hero-experience-badge span {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--color-accent-warm);
+      line-height: 1;
+    }
+
+    /* Majutusühikud / Tooted */
+    .accommodations {
+      background-color: #FFFFFF;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 992px) {
+      .cards-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background-color: var(--color-bg-card);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      transition: var(--transition-fast);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-img-wrapper {
+      position: relative;
+      height: 260px;
+      overflow: hidden;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .card-img {
+      transform: scale(1.03);
+    }
+
+    .card-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: rgba(28, 46, 61, 0.85);
+      color: #FFFFFF;
+      padding: 0.35rem 0.875rem;
+      border-radius: 50px;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      backdrop-filter: blur(4px);
+    }
+
+    .card-body {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin: 0.5rem 0 1.25rem 0;
+    }
+
+    .card-price span {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--color-text-muted);
+    }
+
+    .card-list {
+      list-style: none;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    .card-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.625rem;
+      font-size: 0.9375rem;
+      color: var(--color-text-main);
+    }
+
+    .card-list li::before {
+      content: "•";
+      color: var(--color-accent-warm);
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: -0.25rem;
+    }
+
+    .sub-units {
+      margin-top: 1rem;
+      background-color: var(--color-bg-main);
+      padding: 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border);
+    }
+
+    .sub-units h4 {
+      font-size: 0.9375rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary-dark);
+    }
+
+    .sub-units-list {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      list-style-type: square;
+      padding-left: 1.2rem;
+    }
+
+    .sub-units-list li {
+      margin-bottom: 0.3rem;
+    }
+
+    /* Miks valida meid / Meie lugu */
+    .story-features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .story-features {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .feature-card {
+      background-color: #FFFFFF;
+      padding: 2.25rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-card);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      background-color: var(--color-bg-card);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent-warm);
+      margin-bottom: 1.25rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.125rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .feature-card p {
+      font-size: 0.9375rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0;
+    }
+
+    /* Lisateenused plokk */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .service-item {
+      background-color: var(--color-bg-card);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+    }
+
+    .service-item h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .service-item p {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+
+    /* KKK Accordion */
+    .faq-section {
+      background-color: #FFFFFF;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      background-color: var(--color-bg-main);
+    }
+
+    .faq-button {
+      width: 100%;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      background: none;
+      border: none;
+      font-family: var(--font-heading);
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: var(--transition-fast);
+    }
+
+    .faq-button:hover, .faq-button:focus-visible {
+      background-color: var(--color-bg-card);
+    }
+
+    .faq-icon {
+      font-size: 1.25rem;
+      transition: transform 0.3s ease;
+      color: var(--color-accent-warm);
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease;
+      padding: 0 1.5rem;
+      color: var(--color-text-muted);
+      font-size: 0.9375rem;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 0 1.5rem 1.25rem 1.5rem;
+      max-height: 200px;
+    }
+
+    /* Arvustused */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .review-card {
+      background-color: var(--color-bg-card);
+      padding: 1.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .review-stars {
+      color: #D97706;
+      margin-bottom: 0.75rem;
+      font-size: 0.875rem;
+    }
+
+    .review-text {
+      font-style: italic;
+      font-size: 0.9375rem;
+      color: var(--color-text-main);
+      margin-bottom: 1.25rem;
+    }
+
+    .review-author {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--color-primary-dark);
+    }
+
+    .review-origin {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Asukoht & Kohalejõudmine */
+    .location-section {
+      background-color: #FFFFFF;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 992px) {
+      .location-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+    }
+
+    .location-info {
+      padding-right: 1rem;
+    }
+
+    .location-list {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .location-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 0.9375rem;
+    }
+
+    .location-list svg {
+      color: var(--color-accent-warm);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 380px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      background-color: var(--color-bg-card);
+    }
+
+    /* Broneerimine & Kontakt Vorm */
+    .booking-section {
+      background-color: var(--color-bg-main);
+    }
+
+    .booking-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      background-color: #FFFFFF;
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (min-width: 992px) {
+      .booking-wrapper {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 576px) {
+      .form-row {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      margin-bottom: 0.375rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-family: var(--font-body);
+      font-size: 0.9375rem;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      background-color: var(--color-bg-white);
+      color: var(--color-text-main);
+      transition: var(--transition-fast);
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--color-border-focus);
+      box-shadow: 0 0 0 3px rgba(28, 46, 61, 0.1);
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .checkbox-group input {
+      width: auto;
+      cursor: pointer;
+    }
+
+    .contact-card {
+      background-color: var(--color-bg-card);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-icon {
+      color: var(--color-accent-warm);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+
+    .notice-box {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background-color: rgba(197, 123, 75, 0.1);
+      border-left: 4px solid var(--color-accent-warm);
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+      color: var(--color-primary-dark);
+    }
+
+    /* Jalus / Footer */
+    .footer {
+      background-color: var(--color-primary-dark);
+      color: var(--color-text-light);
+      padding: 4rem 0 2rem 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+    }
+
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+    }
+
+    .footer-desc {
+      color: #D4C9BC;
+      font-size: 0.9375rem;
+      max-width: 400px;
+    }
+
+    .footer-heading {
+      color: #FFFFFF;
+      font-size: 1.1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.625rem;
+    }
+
+    .footer-links a {
+      color: #D4C9BC;
+      font-size: 0.9375rem;
+    }
+
+    .footer-links a:hover {
+      color: #FFFFFF;
+    }
+
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid rgba(212, 201, 188, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: #D4C9BC;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    /* Kleepuv broneerimisriba mobiilis */
+    .mobile-booking-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #FFFFFF;
+      border-top: 1px solid var(--color-border);
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 999;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.08);
+    }
+
+    @media (min-width: 768px) {
+      .mobile-booking-bar {
+        display: none;
+      }
+    }
+
+    .mobile-price {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+    }
+
+    .mobile-price strong {
+      font-size: 1.125rem;
+      color: var(--color-primary-dark);
+      display: block;
+    }
+
+    /* Modal / Privaatsus */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-content {
+      background: #FFFFFF;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      max-width: 600px;
+      max-height: 80vh;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD Struktureeritud Andmed -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Pärna Puhkemaja ja Külaliskorterid",
+    "description": "Otsid mugavat öömaja Saaremaal? Pärna Puhkemaja ja Külaliskorterid pakuvad kodust puhkust Kuressaare vaikses roheluses.",
+    "url": "https://parna.ee",
+    "telephone": "+3725092788",
+    "email": "info@parna.ee",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pärna 3",
+      "addressLocality": "Kuressaare",
+      "addressRegion": "Saare maakond",
+      "postalCode": "93814",
+      "addressCountry": "EE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 58.2530,
+      "longitude": 22.4830
+    },
+    "paymentAccepted": "Cash",
+    "priceRange": "45€ - 90€",
+    "checkinTime": "15:00",
+    "checkoutTime": "12:00",
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Tasuta WiFi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Tasuta parkimine", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Konditsioneer", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Ühisköök ja kööginurgad", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Aiaga sisehoov", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Jalgrattarent", "value": true }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- PÄIS / HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo-link" aria-label="Pärna Puhkemaja avaleht">
+        <img src="parna_puhkemaja_logo.png" alt="Pärna Puhkemaja Logo" class="logo-img" width="48" height="48" onerror="this.style.display='none'">
+        <div>
+          <span class="logo-text">Pärna Puhkemaja</span>
+          <span class="logo-sub">ja Külaliskorterid</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Ava menüü" aria-expanded="false" aria-controls="primaryNav">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="primaryNav">
+          <li><a href="#majutus" class="nav-link">Toad ja korterid</a></li>
+          <li><a href="#miks-meie" class="nav-link">Meie lugu</a></li>
+          <li><a href="#teenused" class="nav-link">Lisateenused</a></li>
+          <li><a href="#kkk" class="nav-link">KKK</a></li>
+          <li><a href="#asukoht" class="nav-link">Asukoht</a></li>
+          <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#broneeri" class="btn btn-primary">Broneeri puhkus</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / AVAPLOKK -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">Pereettevõte aastast 1993</span>
+          <h1>Kodune ja soe majutus Kuressaares – Pärna Puhkemaja</h1>
+          <p class="hero-intro">
+            Kui otsid vaikset, kodust ja mugavat paika Saaremaal peatumiseks, on Pärna Puhkemaja ja Külaliskorterid sinu jaoks ideaalne majutus Kuressaares. Oleme 1993. aastast tegutsev pereettevõte, kus ootavad sind soe vastuvõtt, roheline aiaga sisehoov ning hubased toad ja korterid. Asume rahulikus eramajade rajoonis, kus pargi lähedus ja kesklinn on vaid lühikese jalutuskäigu kaugusel.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#broneeri" class="btn btn-primary">Saada broneerimispäring</a>
+            <a href="#majutus" class="btn btn-secondary">Vaata majutusvõimalusi</a>
+          </div>
+
+          <div class="hero-features">
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Lossipark 5 min jalutuskäik
+            </div>
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Tasuta parkimine maja ees
+            </div>
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Aiaga sisehoov ja terrass
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="images/357365698_785273059708717_5382284297071717503_n.jpg" alt="Pärna puhkemaja roheline aiaga sisehoov ja terrass Kuressaares" class="hero-image" width="600" height="420" loading="eager">
+          <div class="hero-experience-badge">
+            <span>30+ aastat</span>
+            <small style="color: #FBF9F5;">külalislahkust Saaremaal</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAJUTUSÜHIKUD / TOOTED KAARTIDENA -->
+    <section class="section-padding accommodations" id="majutus">
+      <div class="container">
+        <div class="section-title">
+          <h2>Meie hubased majutusvõimalused</h2>
+          <p>Vali sooja kodumajutuse meeleoluga peahoone tubade või aastaringsete korterite vahel</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Peahoone kaart -->
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="images/peahoone-tuba.jpg" alt="Pärna puhkemaja kahekohalise toa sisevaade ja privaatne vannituba" class="card-img" width="580" height="260" loading="lazy">
+              <span class="card-tag">Avatud 15. aprill – 19. oktoober</span>
+            </div>
+            <div class="card-body">
+              <h3>Peahoone hubased toad</h3>
+              <p class="card-price">45 € – 65 € <span>/ öö</span></p>
+              <p style="font-size: 0.9375rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+                Peahoone pakub sooja kodumajutuse meeleolu ja taskukohast hinnaklassi. Kokku on majas 9 tuba: 7 kahekohalist ja 2 kolmekohalist tuba.
+              </p>
+              <ul class="card-list">
+                <li>Peaaegu igal toal (7 toal 9-st) on oma privaatne WC ja dušš</li>
+                <li>Kolmel toal on privaatsed rõdud hommikukohvi nautimiseks</li>
+                <li>Tubades on ventilaatorid ja söögisaalis konditsioneer</li>
+                <li>Varustatud ühisköök ja söögisaal toidu valmistamiseks</li>
+              </ul>
+              <a href="#broneeri" class="btn btn-secondary" style="width: 100%;">Broneeri peahoone tuba</a>
+            </div>
+          </article>
+
+          <!-- Külaliskorterite kaart -->
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="images/kulaliskorter.jpg" alt="Hubane rõduga külaliskorter Kuressaare vaikses elamupiirkonnas" class="card-img" width="580" height="260" loading="lazy">
+              <span class="card-tag">Avatud aastaringselt</span>
+            </div>
+            <div class="card-body">
+              <h3>Aastaringsed külaliskorterid</h3>
+              <p class="card-price">50 € – 90 € <span>/ öö (kõrghooaeg 15.06–15.08)</span></p>
+              <p style="font-size: 0.9375rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+                Kõigi mugavustega külaliskorterite hoone on avatud 12 kuud aastas. Sobib suurepäraselt peredele ja privaatsuse nautijatele.
+              </p>
+              <ul class="card-list">
+                <li>Kõikides korterites on isiklik kööginurk ja konditsioneer</li>
+                <li>Privaatsus ja sõltumatus kogu viibimise vältel</li>
+                <li>Ideaalne nii lühemaks kui ka pikemaks puhkuseks</li>
+              </ul>
+              <div class="sub-units">
+                <h4>Valikus 4 eripalgelist majutusruumi:</h4>
+                <ul class="sub-units-list">
+                  <li><strong>Stuudiokorter:</strong> 2. korrusel koos privaatse rõduga</li>
+                  <li><strong>2x Eraldi magamistoaga korterit:</strong> Suurepärane valik peredele</li>
+                  <li><strong>Korter läbi kahe korruse:</strong> All köök ja elutuba, üleval magamistuba, WC ja dušš</li>
+                </ul>
+              </div>
+              <a href="#broneeri" class="btn btn-secondary" style="width: 100%; margin-top: 1.5rem;">Broneeri külaliskorter</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEIE LUGU / MIKS VALIDA MEID -->
+    <section class="section-padding" id="miks-meie">
+      <div class="container">
+        <div class="section-title">
+          <h2>Miks valida Pärna majutus Kuressaares oma puhkuseks?</h2>
+          <p>Meie juures peatudes tajud kohe pereettevõtte soojust ja pühendumust – majad on pereisa enda kätega ehitatud ning tänaseks hoiab hubast atmosfääri juba järgmine põlvkond.</p>
+        </div>
+
+        <div class="story-features">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 3a8 8 0 0 1 8 7.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Ideaalne asukoht</h3>
+            <p>Asume vaiksel ühesuunalisel tänaval eramute rajoonis. Kuressaare lossipark on vaid 5 minuti ning kesklinn ja rand 10 minuti jalutuskäigu kaugusel.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Mugav aiaga sisehoov</h3>
+            <p>Lõõgastu privaatsel väliterrassil või hoiusta oma jalgrattaid turvaliselt meie aiaga piiratud sisehoovis.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+            </div>
+            <h3>Muretu parkimine</h3>
+            <p>Maja ees ootab teid tasuta parkimine (kuni 7 autokohta), mis teeb autoga saabumise eriti mugavaks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISATEENUSED -->
+    <section class="section-padding" id="teenused" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-title">
+          <h2>Lisateenused sinu mugavuseks</h2>
+          <p>Hoolitseme selle eest, et Sinu puhkus oleks võimalikult meeldiv ja muretu</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-item">
+            <h3>☕ Hommikusöök</h3>
+            <p>Rikkalik ja kodune hommikusöök söögisaalis hinnaga 15 € / inimene (lisatasu eest eelneval tellimisel).</p>
+          </div>
+
+          <div class="service-item">
+            <h3>🐾 Lemmikloomad</h3>
+            <p>Neljajalgsed sõbrad on lubatud eelneval kokkuleppel (lisatasu eest).</p>
+          </div>
+
+          <div class="service-item">
+            <h3>🚲 Jalgrattarent</h3>
+            <p>Rendime jalgrattaid Kuressaare linna ja Saaremaal tiirutamiseks (hind kokkuleppel vastavalt perioodile).</p>
+          </div>
+
+          <div class="service-item">
+            <h3>👶 Peredele free</h3>
+            <p>Beebivoodi on meie väikestele külalistele tasuta saadaval (palume ette teatada).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KORDUMA KIPPUVAD KÜSIMUSED (KKK) -->
+    <section class="section-padding faq-section" id="kkk">
+      <div class="container">
+        <div class="section-title">
+          <h2>Korduma kippuvad küsimused</h2>
+          <p>Kasulik info enne broneerimist ja saabumist</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Mis kell on sisseregistreerimine?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sisseregistreerimine toimub kell 15.00–18.00. Kui saabud hiljem, palume sellest kindlasti eelnevalt teada anda, et saaksime kokku leppida võtmete üleandmise.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Kuidas toimub maksmine?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Maksmine toimub kohapeal saabumise päeval ja <strong>ainult sularahas</strong>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Kas voodipesu, rätikud ja Wifi on hinna sees?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Jah, voodipesu, rätikud, seep ja kiire WiFi kogu majutuse territooriumil on hinna sees ilma lisatasuta.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Kas kohapeal saab toitu ise valmistada?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Jah! Peahoone külaliste käsutuses on köögitarvikutega ühisköök ning söögisaal. Külaliskorterites on olemas oma isiklik kööginurk.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Kas majutuskoht sobib lemmikloomaga reisimiseks?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Lemmikloomad on oodatud eelneval kokkuleppel ja väikese lisatasu eest.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KÜLALISTE ARVUSTUSED -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Mida meie külalised ütlevad?</h2>
+          <p>Autentsed tagasisided meie armsatelt külastajatelt</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Väga kodune ja puhas koht! Asukoht on imeline – vaikne tänav, kuid lossipark ja rand on samas väga lähedal. Sisehoovis oli hea õhtuti istuda."</p>
+            </div>
+            <div>
+              <div class="review-author">Katriin ja pere</div>
+              <div class="review-origin">Eesti</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Ihana ja rauhallinen majoituspaikka Kuressaaressa. Isäntäperhe oli erittäin ystävällinen ja auttavainen. Polkupyörät sai kätevästi pihalle säilöön."</p>
+            </div>
+            <div>
+              <div class="review-author">Mikael & Tiina</div>
+              <div class="review-origin">Soome</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Külaliskorteris oli kõik vajalik olemas, kööginurk ja konditsioneer tegid kuuma suveilmaga peatumise väga mugavaks. Tuleme kindlasti tagasi!"</p>
+            </div>
+            <div>
+              <div class="review-author">Andris</div>
+              <div class="review-origin">Läti</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASUKOHT JA KOHALEJÕUDNIME -->
+    <section class="section-padding location-section" id="asukoht">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-info">
+            <h2>Asukoht ja kohalejõudmine</h2>
+            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">
+              Pärna Puhkemaja asub Kuressaare linna vaikses ja rohelises eramajade rajoonis.
+            </p>
+
+            <ul class="location-list">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 3a8 8 0 0 1 8 7.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span><strong>Aadress:</strong> Pärna 3, Kuressaare, Saaremaa (ühesuunaline rahuliku liiklusega tänav).</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span><strong>Kaugused:</strong> Lossipark 5 minutit, kesklinn ja keskrand 10 minutit jalutuskäiku.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                <span><strong>Parkimine:</strong> Tasuta parkimine maja ees (7 autokohta).</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="map-wrapper">
+            <iframe class="map-frame" src="https://maps.google.com/maps?q=P%C3%A4rna%203,%20Kuressaare,%20Saaremaa&t=&z=15&ie=UTF8&iwloc=&output=embed" title="Pärna Puhkemaja asukoht kaardil" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRONEERIMISVORM JA KONTAKT -->
+    <section class="section-padding booking-section" id="broneeri">
+      <div class="container">
+        <div class="section-title">
+          <h2>Broneeri puhkus otse meilt</h2>
+          <p>Broneeri oma viibimine otse meie kaudu ilma vahendustasudeta ja tagame sulle kiire isikliku kinnituse!</p>
+        </div>
+
+        <div class="booking-wrapper">
+          <!-- Broneerimisvorm -->
+          <div>
+            <form action="https://parna.ee" method="POST" id="bookingForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Ees- ja perekonnanimi *</label>
+                  <input type="text" id="name" name="name" required placeholder="Mari Tamm">
+                </div>
+                <div class="form-group">
+                  <label for="email">E-posti aadress *</label>
+                  <input type="email" id="email" name="email" required placeholder="mari@naide.ee">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Telefoninumber *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="+372 5X XX XX XX">
+                </div>
+                <div class="form-group">
+                  <label for="room_type">Majutusüksuse valik *</label>
+                  <select id="room_type" name="room_type" required>
+                    <option value="" disabled selected>Vali sobiv tuba või korter</option>
+                    <option value="Peahoone kahekohaline tuba">Peahoone kahekohaline tuba (45–65 €)</option>
+                    <option value="Peahoone kolmekohaline tuba">Peahoone kolmekohaline tuba (45–65 €)</option>
+                    <option value="Külaliskorter: Stuudio">Külaliskorter: Stuudio rõduga (50–90 €)</option>
+                    <option value="Külaliskorter: 1-magamistoaga">Külaliskorter: 1-magamistoaga (50–90 €)</option>
+                    <option value="Külaliskorter: 2-korruseline">Külaliskorter: Läbi 2 korruse (50–90 €)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkin">Saabumise kuupäev *</label>
+                  <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout">Lahkumise kuupäev *</label>
+                  <input type="date" id="checkout" name="checkout" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guests">Inimeste arv *</label>
+                  <input type="number" id="guests" name="guests" min="1" max="10" value="2" required>
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column; justify-content: center;">
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="breakfast" name="breakfast" value="Jah">
+                    <label for="breakfast" style="margin-bottom: 0; font-weight: normal; cursor: pointer;">Soovin hommikusööki (15 € / inimene)</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Erisoovid või lisamärkused (nt lemmikloom, beebivoodi, hilisem saabumine)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Kirjuta siia oma soovid..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Saada broneerimispäring</button>
+            </form>
+          </div>
+
+          <!-- Kontaktandmed ja oluline info -->
+          <div>
+            <div class="contact-card">
+              <h3 style="margin-bottom: 1.5rem;">Otsekontaktid</h3>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <small style="color: var(--color-text-muted);">Telefon</small>
+                  <div><a href="tel:+3725092788" style="font-weight: 600; font-size: 1.1rem; color: var(--color-primary-dark);">+372 5092788</a></div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <small style="color: var(--color-text-muted);">E-post</small>
+                  <div><a href="mailto:info@parna.ee" style="font-weight: 600; color: var(--color-primary-dark);">info@parna.ee</a></div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <small style="color: var(--color-text-muted);">Aadress</small>
+                  <div style="font-weight: 600; color: var(--color-primary-dark);">Pärna 3, Kuressaare, Saaremaa</div>
+                </div>
+              </div>
+
+              <div class="notice-box">
+                <strong>Meeldetuletus külalisele:</strong><br>
+                • Sisseregistreerimine kell 15.00–18.00<br>
+                • Maksmine toimub kohapeal <strong>ainult sularahas</strong>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JALUS / FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Pärna Puhkemaja</div>
+          <p class="footer-desc">
+            Kodune ja soe majutus Kuressaares aastast 1993. Tubade ja aastaringsete külaliskorterite rent Saaremaal.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Kiirlingid</h4>
+          <ul class="footer-links">
+            <li><a href="#majutus">Toad ja korterid</a></li>
+            <li><a href="#miks-meie">Meie lugu</a></li>
+            <li><a href="#teenused">Lisateenused</a></li>
+            <li><a href="#kkk">Korduma kippuvad küsimused</a></li>
+            <li><a href="#broneeri">Broneerimine</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Kontakt & Asukoht</h4>
+          <ul class="footer-links">
+            <li>Pärna 3, Kuressaare</li>
+            <li>Tel: <a href="tel:+3725092788">+372 5092788</a></li>
+            <li>E-post: <a href="mailto:info@parna.ee">info@parna.ee</a></li>
+            <li>Maksmine: Kohapeal sularahas</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="year">2026</span> Pärna Puhkemaja ja Külaliskorterid. Kõik õigused kaitstud.
+        </div>
+        <div>
+          <a href="#" id="privacyLink" style="color: #D4C9BC; text-decoration: underline;">Andmekaitsetingimused</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBIILNE KLEEPUV BRONEERIMISRIBA -->
+  <div class="mobile-booking-bar">
+    <div class="mobile-price">
+      alates <strong>45 € / öö</strong>
+    </div>
+    <a href="#broneeri" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.875rem;">Broneeri puhkus</a>
+  </div>
+
+  <!-- ANDMEKAITSETINGIMUSTE MODAAL -->
+  <div class="modal" id="privacyModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <h3 style="margin-bottom: 1rem;">Andmekaitsetingimused</h3>
+      <p>Pärna Puhkemaja ja Külaliskorterid töötlevad Teie isikuandmeid (nimi, e-post, telefoninumber, saabumise/lahkumise kuupäevad) üksnes broneeringu haldamiseks ja Teiega suhtlemiseks.</p>
+      <p>Me ei jaga Teie andmeid kolmandate osapooltega ega kasuta neid reklaamieesmärkidel ilma Teie nõusolekuta. Andmeid säilitatakse vastavalt Eesti Vabariigi seadusandlusele.</p>
+      <p style="margin-top: 1rem;">Küsimuste korral võtke meiega ühendust aadressil <strong>info@parna.ee</strong>.</p>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIKA -->
+  <script>
+    // Mobiilse menüü avamine ja sulgemine
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const primaryNav = document.getElementById('primaryNav');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+      mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+      primaryNav.classList.toggle('active');
+    });
+
+    // Menüü lingile vajutamisel sulge mobiilimenüü
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        primaryNav.classList.remove('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // KKK Accordioni loogika
+    const faqButtons = document.querySelectorAll('.faq-button');
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Sulge teised lahti olevad elemendid
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.classList.remove('active');
+            item.querySelector('.faq-button').setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Vaheta hetke elemendi olekut
+        faqItem.classList.toggle('active');
+        button.setAttribute('aria-expanded', !isExpanded);
+      });
+    });
+
+    // Andmekaitse modaal
+    const privacyLink = document.getElementById('privacyLink');
+    const privacyModal = document.getElementById('privacyModal');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+    privacyLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      privacyModal.style.display = 'flex';
+    });
+
+    modalCloseBtn.addEventListener('click', () => {
+      privacyModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === privacyModal) {
+        privacyModal.style.display = 'none';
+      }
+    });
+
+    // Jaluse aasta automaatne uuenemine
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
